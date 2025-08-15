@@ -1,0 +1,131 @@
+.ia-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #f4f7fa;
+  color: #333;
+}
+
+/* 🧠 Hero de apertura */
+.ia-hero {
+  background-color: var(--color-primario);
+  color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.ia-hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.ia-hero p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* 🧪 Ejemplos reales */
+.ia-ejemplos {
+  background-color: white;
+  padding: 2rem;
+  border-left: 6px solid var(--color-secundario);
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.ia-ejemplos h3 {
+  margin-bottom: 1rem;
+  color: var(--color-secundario);
+}
+
+.ia-ejemplos ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.ia-ejemplos li {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* 📘 Glosario simbólico */
+.ia-glosario {
+  background-color: #fff;
+  padding: 2rem;
+  border-left: 6px solid var(--color-terciario, #6c63ff);
+  border-radius: 6px;
+}
+
+.ia-glosario h3 {
+  margin-bottom: 1rem;
+  color: var(--color-terciario, #6c63ff);
+}
+
+.ia-glosario dl {
+  margin: 0;
+}
+
+.ia-glosario dt {
+  font-weight: bold;
+  margin-top: 1rem;
+  color: #444;
+}
+
+.ia-glosario dd {
+  margin-left: 0;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* 🔗 Cierre emocional */
+.ia-cierre {
+  padding: 1.5rem;
+  text-align: center;
+  font-style: italic;
+  background-color: var(--color-secundario-claro, #e0f7fa);
+  border-radius: 6px;
+  color: #444;
+}
+
+.ia-cierre a {
+  color: var(--color-primario);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.ia-cierre a:hover {
+  text-decoration: underline;
+}
+
+/* ✨ Animación suave */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 🌐 Responsive */
+@media (max-width: 768px) {
+  .ia-container {
+    padding: 1rem;
+  }
+
+  .ia-hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .ia-ejemplos,
+  .ia-glosario {
+    padding: 1.5rem;
+  }
+}

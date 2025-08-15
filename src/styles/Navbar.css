@@ -9,12 +9,14 @@
   top: 0;
   z-index: 1000;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  animation: slideDown 0.5s ease-in;
 }
 
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: 1px;
+  color: white;
 }
 
 .navLinks {
@@ -25,9 +27,38 @@
 .navLinks a {
   color: white;
   font-weight: 500;
-  transition: opacity 0.3s ease;
+  text-decoration: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .navLinks a:hover {
   opacity: 0.8;
+  transform: translateY(-2px);
+}
+
+/* 🌐 Responsive para móviles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .navLinks {
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 0.5rem;
+  }
+}
+
+/* ✨ Animación simbólica */
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

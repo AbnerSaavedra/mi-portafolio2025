@@ -2,45 +2,85 @@
   background: #fefefe;
   border-radius: 10px;
   padding: 1rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 0.6s ease-in;
 }
 
 .card-proyecto:hover {
   transform: scale(1.03);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
 
 .card-proyecto img {
   width: 100%;
   border-radius: 6px;
   margin-bottom: 0.5rem;
+  object-fit: cover;
 }
 
 .card-proyecto h3 {
   font-size: 1.2rem;
   margin-bottom: 0.3rem;
   color: #333;
+  font-weight: 600;
 }
 
 .card-proyecto p {
   font-size: 0.95rem;
   color: #555;
+  line-height: 1.4;
 }
 
 .tecnologias {
   margin-top: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
 }
 
 .tecnologias span {
   background: #e0e0e0;
-  margin: 0.2rem;
   padding: 0.3rem 0.6rem;
   border-radius: 4px;
   font-size: 0.8rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.card-proyecto a {
+  display: inline-block;
+  margin-top: 0.6rem;
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.card-proyecto a:hover {
+  text-decoration: underline;
 }
 
 .categoria {
   font-style: italic;
   color: #777;
   margin-top: 0.5rem;
+}
+
+/* 🟡 Proyecto destacado */
+.card-proyecto.destacado {
+  border-left: 6px solid #0077cc;
+  background: #f0f8ff;
+  box-shadow: 0 6px 20px rgba(0, 119, 204, 0.2);
+}
+
+/* ✨ Animación simbólica */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

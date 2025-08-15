@@ -5,10 +5,14 @@ import { Navbar } from './components/Navbar';
 
 const App: React.FC = () => {
   return (
-    <>
-      <Navbar />
-      <AppRoutes />
-    </>
+    <div className="app-container">
+        <header>
+          <Navbar />
+        </header>
+        <main>
+          <AppRoutes />
+        </main>
+    </div>
   );
 };
 
