@@ -1,0 +1,46 @@
+.card-proyecto {
+  background: #fefefe;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card-proyecto:hover {
+  transform: scale(1.03);
+}
+
+.card-proyecto img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+.card-proyecto h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+  color: #333;
+}
+
+.card-proyecto p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.tecnologias {
+  margin-top: 0.5rem;
+}
+
+.tecnologias span {
+  background: #e0e0e0;
+  margin: 0.2rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.categoria {
+  font-style: italic;
+  color: #777;
+  margin-top: 0.5rem;
+}
