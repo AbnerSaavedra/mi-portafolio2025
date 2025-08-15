@@ -1,4 +1,5 @@
 // src/components/AboutMe.tsx
+import '../styles/AboutMe.css'
 export const AboutMe: React.FC = () => (
   <section className="about">
     <h2>¿Quién soy?</h2>

@@ -1,0 +1,25 @@
+.aboutMe {
+  padding: 3rem 2rem;
+  background-color: white;
+  color: var(--color-texto);
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  color: var(--color-primario);
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.8;
+  color: #555;
+}
+
+.highlight {
+  color: var(--color-acento);
+  font-weight: 600;
+}
