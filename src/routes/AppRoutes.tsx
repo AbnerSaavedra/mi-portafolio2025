@@ -1,5 +1,5 @@
 // src/routes/AppRoutes.tsx
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Inicio from '../pages/Inicio';
 
 export const AppRoutes: React.FC = () => (
